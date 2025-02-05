@@ -5,20 +5,6 @@
                 <strong class="text-3xl text-left md:text-4xl lg:text-5xl font-bold text-blue-500 w-1/2">
                     Recent Projects
                 </strong>
-                <!-- <div @click="navigateToProjectView" v-if="mode !== true"
-                    class="flex justify-start hover:text-blue-500 py-3 items-center md:px-4 md:border md:border-gray-200 lg:border lg:border-gray-200 xl:border xl:border-gray-200">
-                    <i class="fas fa-arrow-circle-right mx-2 "></i>
-                    <a class="text-gray-600   mx-2 cursor-pointer">
-                        View More
-                    </a>
-                </div>
-                <div @click="navigateToProjectView" v-else
-                    class="flex justify-start hover:text-blue-500 py-3 text-white items-center md:px-4 md:border md:border-gray-200 lg:border lg:border-gray-200 xl:border xl:border-gray-200">
-                    <i class="fas fa-arrow-circle-right mx-2 "></i>
-                    <a class="text-white   mx-2 cursor-pointer">
-                        View More
-                    </a>
-                </div> -->
                 <div class="wave-container w-[70px] h-[70px] rounded-full flex items-center justify-center  transform">
 
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -35,33 +21,33 @@
                 <!-- Project 1 -->
                 <div class="block lg:flex mb-12">
                     <div class="w-full md:w-full lg:w-1/2">
-                        <h3 class="text-xl md:text-2xl font-semibold text-gray-800" :style="{ color: mode ? 'white' : '' }">
+                        <h3 class="text-xl md:text-2xl font-semibold text-gray-800" :style="LightModeText(mode)">
                             MCM Church</h3>
-                        <p class="text-sm md:text-base text-gray-600 mt-2" :style="{ color: mode ? 'white' : '' }">
+                        <p class="text-sm md:text-base text-gray-600 mt-2" :style="LightModeText(mode)">
                             MCM church website, provides assistance in
                             post reading and expense tracking. I contribute to design and lead
                             frontend and backend functionalities, striving for user-friendly features and functionality.
                         </p>
                         <div class="my-8">
-                            <p class="text-gray-800" :style="{ color: mode ? 'white' : '' }">
+                            <p class="text-gray-800" :style="LightModeText(mode)">
                                 Tools and Frameworks used:
                             </p>
-                            <button class="tech-icon my-2 " :style="{ color: mode ? 'white' : '' }"><img
+                            <button class="tech-icon my-2 " :style="LightModeText(mode)"><img
                                     src="../assets/projects/vue.png" alt="Vue.js Icon" class="w-6 h-6 mr-2">
                                 Vue.js</button>
-                            <button class="tech-icon my-2" :style="{ color: mode ? 'white' : '' }"><img
+                            <button class="tech-icon my-2" :style="LightModeText(mode)"><img
                                     src="../assets/projects/tailwind.png" alt="Tailwind CSS Icon" class="w-6 h-6 mr-2">
                                 Tailwind CSS</button>
-                            <button class="tech-icon my-2" :style="{ color: mode ? 'white' : '' }"><img
+                            <button class="tech-icon my-2" :style="LightModeText(mode)"><img
                                     src="../assets/projects/mysql.png" alt="Mysql Icon" class="w-6 h-6 mr-2">
                                 Mysql</button>
 
-                            <button class="tech-icon my-2" :style="{ color: mode ? 'white' : '' }"><img
+                            <button class="tech-icon my-2" :style="LightModeText(mode)"><img
                                     src="../assets/projects/express.png" alt="Express.js Icon" class="w-6 h-6 mr-2">
                                 Express.js</button>
 
 
-                            <button class="tech-icon my-2" :style="{ color: mode ? 'white' : '' }"><img
+                            <button class="tech-icon my-2" :style="LightModeText(mode)"><img
                                     src="../assets/projects/node.png" alt="Node.js Icon" class="w-6 h-6 mr-2">
                                 Node.js </button>
 
@@ -76,9 +62,7 @@
                     </div>
                     <div
                         class="lg:flex  lg:w-1/2 md:w-full  flex lg:justify-start md:justify-center sm:justify-center justify-left my-12 md:my-12 lg:my-0 mx-auto md:mx-0 lg:ml-4">
-                        <!-- <img v-if="mode != true" src="../assets/mcmc.png" alt="" class="w-full">
-                        <img v-else src="../assets/darkmcmc.png" alt=""
-                            class="border-none border-gray-300 rounded-lg w-full"> -->
+                   
                         <iframe width="100%" height="315" class="rounded-lg border"
                             src="https://www.youtube.com/embed/5YDcLRVu80U?si=AuXxty5_AETNGSqT" title="YouTube video player"
                             frameborder="0"
@@ -90,32 +74,32 @@
                 <!-- Project 2 -->
                 <div class="block  lg:flex  mb-12">
                     <div class="w-full md:w-full lg:w-1/2">
-                        <h3 class="text-xl md:text-2xl font-semibold text-gray-800" :style="{ color: mode ? 'white' : '' }">
+                        <h3 class="text-xl md:text-2xl font-semibold text-gray-800" :style="LightModeText(mode)">
                             Spot Paradise</h3>
-                        <p class="text-sm md:text-base text-gray-600 mt-2" :style="{ color: mode ? 'white' : '' }">
+                        <p class="text-sm md:text-base text-gray-600 mt-2" :style="LightModeText(mode)">
                             Spot Paradise's boat reservation feature, simplifies
                             reservation processes for easy booking. I contribute to design and provide frontend and
                             backend support, ensuring a user-friendly experience for seamless reservations.
                         </p>
                         <div class="my-8">
-                            <p class="text-gray-800" :style="{ color: mode ? 'white' : '' }">
+                            <p class="text-gray-800" :style="LightModeText(mode)">
                                 Tools and Frameworks used:
                             </p>
-                            <button class="tech-icon my-2" :style="{ color: mode ? 'white' : '' }"><img
+                            <button class="tech-icon my-2" :style="LightModeText(mode)"><img
                                     src="../assets/projects/vue.png" alt="Vue.js Icon" class="w-6 h-6 mr-2">
                                 Vue.js</button>
-                            <button class="tech-icon my-2" :style="{ color: mode ? 'white' : '' }"><img
+                            <button class="tech-icon my-2" :style="LightModeText(mode)"><img
                                     src="../assets/projects/bootstrap.png" alt="Bootstrap CSS Icon" class="w-6 h-6 mr-2">
                                 Bootstrap CSS</button>
-                            <button class="tech-icon my-2" :style="{ color: mode ? 'white' : '' }"><img
+                            <button class="tech-icon my-2" :style="LightModeText(mode)"><img
                                     src="../assets/projects/mysql.png" alt="Mysql Icon" class="w-6 h-6 mr-2">
                                 Mysql</button>
-                            <button class="tech-icon my-2" :style="{ color: mode ? 'white' : '' }"><img
+                            <button class="tech-icon my-2" :style="LightModeText(mode)"><img
                                     src="../assets/projects/express.png" alt="Express.js Icon" class="w-6 h-6 mr-2">
                                 Express.js</button>
 
 
-                            <button class="tech-icon my-2" :style="{ color: mode ? 'white' : '' }"><img
+                            <button class="tech-icon my-2" :style="LightModeText(mode)"><img
                                     src="../assets/projects/node.png" alt="Node.js Icon" class="w-6 h-6 mr-2">
                                 Node.js </button>
 
@@ -134,32 +118,32 @@
                 <!-- Add more projects as needed -->
                 <div class="block  lg:flex  mb-12">
                     <div class="w-full md:w-full lg:w-1/2">
-                        <h3 class="text-xl md:text-2xl font-semibold text-gray-800" :style="{ color: mode ? 'white' : '' }">
+                        <h3 class="text-xl md:text-2xl font-semibold text-gray-800" :style="LightModeText(mode)">
                             BookMarket</h3>
-                        <p class="text-sm md:text-base text-gray-600 mt-2" :style="{ color: mode ? 'white' : '' }">
+                        <p class="text-sm md:text-base text-gray-600 mt-2" :style="LightModeText(mode)">
                             BookMarket's inventory sales feature, developed solely by me, streamlines transactions
                             effortlessly. Handling both frontend and backend development, I focus on intuitive design
                             and robust functionality, guaranteeing a smooth user experience and efficient sales
                             management.
                         </p>
                         <div class="my-8">
-                            <p class="text-gray-800" :style="{ color: mode ? 'white' : '' }">
+                            <p class="text-gray-800" :style="LightModeText(mode)">
                                 Tools and Frameworks used:
                             </p>
-                            <button class="tech-icon my-2" :style="{ color: mode ? 'white' : '' }"><img
+                            <button class="tech-icon my-2" :style="LightModeText(mode)"><img
                                     src="../assets/projects/html.png" alt="Vue.js Icon" class="w-6 h-6 mr-2">
                                 Html</button>
-                            <button class="tech-icon my-2" :style="{ color: mode ? 'white' : '' }"><img
+                            <button class="tech-icon my-2" :style="LightModeText(mode)"><img
                                     src="../assets/projects/css.png" alt="Bootstrap CSS Icon" class="w-6 h-6 mr-2">
                                 CSS</button>
-                            <button class="tech-icon my-2" :style="{ color: mode ? 'white' : '' }"><img
+                            <button class="tech-icon my-2" :style="LightModeText(mode)"><img
                                     src="../assets/projects/js.png" alt="Node.js Icon" class="w-6 h-6 mr-2">
                                 Javascript </button>
 
-                            <button class="tech-icon my-2" :style="{ color: mode ? 'white' : '' }"><img
+                            <button class="tech-icon my-2" :style="LightModeText(mode)"><img
                                     src="../assets/projects/mysql.png" alt="Mysql Icon" class="w-6 h-6 mr-2">
                                 Mysql</button>
-                            <button class="tech-icon my-2" :style="{ color: mode ? 'white' : '' }"><img
+                            <button class="tech-icon my-2" :style="LightModeText(mode)"><img
                                     src="../assets/projects/php.png" alt="Express.js Icon" class="w-6 h-6 mr-2">
                                 Php PDO</button>
 
@@ -184,7 +168,7 @@
 <script setup>
 import { ref, onMounted } from 'vue';
 import { useRouter } from 'vue-router';
-
+import LightModeText from "./utils/helper.js";
 const router = useRouter();
 
 const navigateToProjectView = () => {
