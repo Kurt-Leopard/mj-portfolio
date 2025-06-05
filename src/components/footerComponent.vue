@@ -1,5 +1,5 @@
 <template>
-    <footer class="bg-white border-t text-white py-2"
+    <footer class="bg-white border-t text-white py-2 fixed bottom-0 left-0 w-full z-10 flex items-center justify-center"
         :style="{ background: mode == true ? '#111' : 'white', borderColor: mode == true ? '#222' : '' }">
         <div class="container flex justify-around">
             <ul class="flex w-full justify-center">

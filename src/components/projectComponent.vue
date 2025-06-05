@@ -11,13 +11,15 @@
                         @click="navigateToProjectView" stroke="currentColor"
                         class="size-10 p-2 border-2 border-blue-500  rounded-full text-blue-500 z-10 cursor-pointer"
                         :class="mode ? '' : 'bg-white'">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 4.5-15 15m0 0h11.25m-11.25 0V8.25" />
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m19.5 4.5-15 15m0 0h11.25m-11.25 0V8.25" />
                     </svg>
 
                 </div>
 
             </div>
             <div class="mt-8 ">
+
                 <!-- Project 1 -->
                 <div class="block lg:flex mb-12">
                     <div class="w-full md:w-full lg:w-1/2">
@@ -62,12 +64,53 @@
                     </div>
                     <div
                         class="lg:flex  lg:w-1/2 md:w-full  flex lg:justify-start md:justify-center sm:justify-center justify-left my-12 md:my-12 lg:my-0 mx-auto md:mx-0 lg:ml-4">
-                   
+
                         <iframe width="100%" height="315" class="rounded-lg border"
-                            src="https://www.youtube.com/embed/5YDcLRVu80U?si=AuXxty5_AETNGSqT" title="YouTube video player"
-                            frameborder="0"
+                            src="https://www.youtube.com/embed/5YDcLRVu80U?si=AuXxty5_AETNGSqT"
+                            title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="block lg:flex mb-12">
+                    <div class="w-full md:w-full lg:w-1/2">
+                        <h3 class="text-xl md:text-2xl font-semibold text-gray-800" :style="LightModeText(mode)">
+                            Cinnov8 Advisory Group</h3>
+                        <p class="text-sm md:text-base text-gray-600 mt-2" :style="LightModeText(mode)">
+                            See a world where people and businesses transform scattered efforts into focused progress,
+                            with clarity, purpose and direction.By fostering structured decision-making, we help clients
+                            create workplaces where individuals contribute meaningfully, feel valued, and drive real
+                            impact—enhancing productivity
+                        </p>
+                        <div class="my-8">
+                            <p class="text-gray-800" :style="LightModeText(mode)">
+                                Tools and Frameworks used:
+                            </p>
+                            <button class="tech-icon my-2 " :style="LightModeText(mode)"><img
+                                    src="../assets/projects/nextjs.png" alt="Next.js Icon" class="w-6 h-6 mr-2">
+                                Next.js</button>
+                            <button class="tech-icon my-2" :style="LightModeText(mode)"><img
+                                    src="../assets/projects/tailwind.png" alt="Tailwind CSS Icon" class="w-6 h-6 mr-2">
+                                Tailwind CSS</button>
+
+
+
+                        </div>
+                        <div>
+
+                        </div>
+                        <span :class="mode ? 'text-white' : ''">Site: <a href="https://www.cinnov8.com/"
+                                class="text-blue-500">
+                                https://www.cinnov8.com/</a></span>
+
+                    </div>
+                    <div
+                        class="lg:flex w-full  lg:w-1/2 md:w-full  flex lg:justify-start md:justify-center sm:justify-center  justify-left my-12 md:my-12 lg:my-0 mx-auto md:mx-0 lg:ml-4">
+                        <img v-if="mode != true" src="../assets/cinnov8-desktop.jpg" alt="cinoov8" class="w-full">
+                        <img v-else src="../assets/cinnov8-desktop.jpg" alt="cinoov8"
+                            class="border-none border-gray-300 rounded-lg w-full" style="background-color: #222;">
+
                     </div>
                 </div>
 
@@ -89,7 +132,8 @@
                                     src="../assets/projects/vue.png" alt="Vue.js Icon" class="w-6 h-6 mr-2">
                                 Vue.js</button>
                             <button class="tech-icon my-2" :style="LightModeText(mode)"><img
-                                    src="../assets/projects/bootstrap.png" alt="Bootstrap CSS Icon" class="w-6 h-6 mr-2">
+                                    src="../assets/projects/bootstrap.png" alt="Bootstrap CSS Icon"
+                                    class="w-6 h-6 mr-2">
                                 Bootstrap CSS</button>
                             <button class="tech-icon my-2" :style="LightModeText(mode)"><img
                                     src="../assets/projects/mysql.png" alt="Mysql Icon" class="w-6 h-6 mr-2">
