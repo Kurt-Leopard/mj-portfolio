@@ -1,7 +1,7 @@
 <template>
     <main>
         <div class="grid lg:grid-cols-2 items-center justify-center px-2 lg:px-2 xl:p-0"
-            :class="showLazy ? '' : 'mb-[270px]'" id="dashboard">
+            :class="showLazy ? '' : 'mb-[280px]'" id="dashboard">
             <section class="w-full lg:text-left md:text-center sm:text-center text-left pt-2 lg:pr-[24px]">
 
                 <strong class="standardText  text-white">
