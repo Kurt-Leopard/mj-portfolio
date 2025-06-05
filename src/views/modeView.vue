@@ -1,7 +1,8 @@
 <template>
     <main>
 
-        <div class="grid lg:grid-cols-2 items-center justify-center px-2 lg:px-2 xl:p-0" id="large-media">
+        <div class="grid lg:grid-cols-2 items-center justify-center px-2 lg:px-2 xl:p-0"
+            :class="showLazy ? '' : 'mb-[200px]'" id="large-media">
             <section class="w-full lg:text-left md:text-center sm:text-center text-left pt-2  lg:pr-[24px]">
                 <strong class="standardText">
                     <span class="text-blue-500">Welcome</span>, I am web enthusiast.
@@ -47,9 +48,10 @@
         </div>
 
 
-        <aboutComponent id="about-section" class="scroll-animation" :class="{ 'active': isAboutSectionVisible }" />
+        <aboutComponent id="about-section" class="scroll-animation" :class="{ 'active': isAboutSectionVisible }"
+            v-if="showLazy" />
         <projectComponent id="project-section" class="scroll-animation mb-32"
-            :class="{ 'active': isProjectSectionVisible }" />
+            :class="{ 'active': isProjectSectionVisible }" v-if="showLazy" />
     </main>
 </template>
 
@@ -72,6 +74,22 @@ const projectComponent = defineAsyncComponent(() => import('../components/projec
 
 const { isVisible: isAboutSectionVisible } = useScrollAnimation('about-section');
 const { isVisible: isProjectSectionVisible } = useScrollAnimation('project-section');
+
+
+import { ref, onMounted, onUnmounted } from 'vue';
+
+const showLazy = ref(false);
+const handleMouseEnter = () => {
+    showLazy.value = true;
+};
+
+onMounted(() => {
+    document.addEventListener('mouseenter', handleMouseEnter);
+});
+
+onUnmounted(() => {
+    document.removeEventListener('mouseenter', handleMouseEnter);
+});
 
 </script>
 <style scoped>
