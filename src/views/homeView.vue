@@ -86,9 +86,13 @@ const handleMouseEnter = () => {
 
 onMounted(() => {
     document.addEventListener('mousemove', handleMouseEnter);
+    document.addEventListener('touchstart', handleMouseEnter);
+    document.addEventListener('scroll', handleMouseEnter);
 });
 onUnmounted(() => {
     document.removeEventListener('mousemove', handleMouseEnter);
+    document.addEventListener('touchstart', handleMouseEnter);
+    document.addEventListener('scroll', handleMouseEnter);
 });
 
 </script>
