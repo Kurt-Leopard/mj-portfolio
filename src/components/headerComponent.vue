@@ -24,7 +24,6 @@ const togs = () => {
     mode.value = mode.value === 'true' ? 'false' : 'true';
     sessionStorage.setItem("mode", mode.value);
     router.push(mode.value === 'true' ? "/" : "/dashboard");
-    console.log(mode.value);
     document.dispatchEvent(new CustomEvent('modeChange', { detail: mode.value.toString() }));
 };
 

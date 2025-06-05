@@ -26,11 +26,11 @@ const handleMouseEnter = () => {
 
 onMounted(() => {
 
-  document.addEventListener('mouseenter', handleMouseEnter);
+  document.addEventListener('mousemove', handleMouseEnter);
 });
 
 onUnmounted(() => {
-  document.removeEventListener('mouseenter', handleMouseEnter);
+  document.removeEventListener('mousemove', handleMouseEnter);
 });
 </script>
 
