@@ -114,6 +114,91 @@
                     </div>
                 </div>
 
+                <div class="block lg:flex mb-12">
+                    <div class="w-full md:w-full lg:w-1/2">
+                        <h3 class="text-xl md:text-2xl font-semibold text-gray-800" :style="LightModeText(mode)">
+                            Discovery Hospitality</h3>
+                        <p class="text-sm md:text-base text-gray-600 mt-2" :style="LightModeText(mode)">
+                            Discovery Hospitality is a collection of unique resort destinations that celebrate local
+                            culture, comfort, and connection. Each property offers thoughtfully designed experiences
+                            that inspire relaxation and discovery, blending warm hospitality with immersive
+                            environments.
+                            Whether for escape or exploration, Discovery is where unforgettable journeys begin.
+
+
+                        </p>
+                        <div class="my-8">
+                            <p class="text-gray-800" :style="LightModeText(mode)">
+                                Tools and Frameworks used:
+                            </p>
+                            <button class="tech-icon my-2 " :style="LightModeText(mode)"><img
+                                    src="../assets/projects/nextjs.png" alt="Next.js Icon" class="w-6 h-6 mr-2">
+                                Next.js</button>
+                            <button class="tech-icon my-2" :style="LightModeText(mode)"><img
+                                    src="../assets/projects/tailwind.png" alt="Tailwind CSS Icon" class="w-6 h-6 mr-2">
+                                Tailwind CSS</button>
+
+
+
+                        </div>
+                        <div>
+
+                        </div>
+                        <span :class="mode ? 'text-white' : ''">Site: <a href="https://www.discoveryhotels-resorts.com/"
+                                class="text-blue-500">
+                                https://www.discoveryhotels-resorts.com/</a></span>
+
+                    </div>
+                    <div
+                        class="lg:flex w-full  lg:w-1/2 md:w-full  flex lg:justify-start md:justify-center sm:justify-center  justify-left my-12 md:my-12 lg:my-0 mx-auto md:mx-0 lg:ml-4">
+                        <img v-if="mode != true" src="../assets/discovery.jpg" alt="cinoov8" class="w-full">
+                        <img v-else src="../assets/discovery.jpg" alt="cinoov8"
+                            class="border-none border-gray-300 rounded-lg w-full" style="background-color: #222;">
+
+                    </div>
+                </div>
+
+                <div class="block lg:flex mb-12">
+                    <div class="w-full md:w-full lg:w-1/2">
+                        <h3 class="text-xl md:text-2xl font-semibold text-gray-800" :style="LightModeText(mode)">
+                            City De Mare</h3>
+                        <p class="text-sm md:text-base text-gray-600 mt-2" :style="LightModeText(mode)">
+                            City de Mare transforms scattered efforts into focused progress. With clarity and purpose, I
+                            build digital solutions that foster meaningful work, structured decision-making, and real
+                            impact—helping people and businesses thrive.
+                            Every project is a step toward creating environments where productivity and purpose align.
+                        </p>
+                        <div class="my-8">
+                            <p class="text-gray-800" :style="LightModeText(mode)">
+                                Tools and Frameworks used:
+                            </p>
+                            <button class="tech-icon my-2 " :style="LightModeText(mode)"><img
+                                    src="../assets/projects/nextjs.png" alt="Next.js Icon" class="w-6 h-6 mr-2">
+                                Next.js</button>
+                            <button class="tech-icon my-2" :style="LightModeText(mode)"><img
+                                    src="../assets/projects/tailwind.png" alt="Tailwind CSS Icon" class="w-6 h-6 mr-2">
+                                Tailwind CSS</button>
+
+
+
+                        </div>
+                        <div>
+
+                        </div>
+                        <span :class="mode ? 'text-white' : ''">Site: <a href="https://www.citydimare.com/"
+                                class="text-blue-500">
+                                https://www.citydimare.com/</a></span>
+
+                    </div>
+                    <div
+                        class="lg:flex w-full  lg:w-1/2 md:w-full  flex lg:justify-start md:justify-center sm:justify-center  justify-left my-12 md:my-12 lg:my-0 mx-auto md:mx-0 lg:ml-4">
+                        <img v-if="mode != true" src="../assets/city-de-mare.jpg" alt="cinoov8" class="w-full">
+                        <img v-else src="../assets/city-de-mare.jpg" alt="cinoov8"
+                            class="border-none border-gray-300 rounded-lg w-full" style="background-color: #222;">
+
+                    </div>
+                </div>
+
                 <!-- Project 2 -->
                 <div class="block  lg:flex  mb-12">
                     <div class="w-full md:w-full lg:w-1/2">
