@@ -23,28 +23,32 @@ const handleDownload = () => {
 
 
 <template>
-    <div class="md:block lg:flex px-2">
-        <section
-            class="hidden md:flex lg:flex lg:w-1/2 md:w-full  lg:justify-start md:justify-center justify-center my-12 md:my-12 lg:my-0">
-            <img src="../assets/72444857_259190555038797_268403930940047360_n.jpg" alt="" width="350" height="350"
-                class=" md:hidden lg:block xl:block   rounded object-cover">
-            <img src="../assets/72444857_259190555038797_268403930940047360_n.jpg" alt=""
-                class="lg:hidden xl:hidden w-full lg:w-2/3 xl:2/3 rounded object-cover">
+    <div class="grid lg:grid-cols-2  items-center justify-center">
+        <section class="  lg:justify-start md:justify-center justify-center ">
+            <img src="../assets/12r JAMANDRE_ MARK ANGELOU O (1) (1).jpg" alt="" width="100%" height="100%"
+                class="w-full rounded object-cover hidden lg:block">
+
         </section>
 
-        <section class="lg:w-1/2 md:w-full lg:text-left md:text-center sm:text-center text-left pt-2 ">
+        <section
+            class="w-full flex flex-col items-center justify-center  text-left md:text-center lg:text-left  pt-2 lg:pl-[24px]">
 
-            <strong class="standardText ">
-                <span class="text-blue-500 about-me-heading">About me.</span>
+            <strong class="standardText text-left md:text-center lg:text-left w-full">
+                <div class="text-blue-500 about-me-heading">About me.</div>
             </strong>
             <p class="mt-8 text-gray-600" :style="{ color: mode ? 'white' : '' }">
-                Hi, I'm Mark Angelou Jamandre, an aspiring web developer based in Cebu, Philippines. My passion lies in
-                crafting meaningful digital experiences through innovative and scalable solutions. I specialize in front-end
-                development and back-end architecture, and I’m constantly expanding my knowledge to stay at the forefront of
+                Hi, I'm Mark Angelou Jamandre, an aspiring web developer based in Cebu, Philippines. My passion lies
+                in
+                crafting meaningful digital experiences through innovative and scalable solutions. I specialize in
+                front-end
+                development and back-end architecture, and I’m constantly expanding my knowledge to stay at the
+                forefront of
                 technology.
 
-                My goal is to leverage my expertise to address real-world challenges and create applications that enhance
-                user experiences and drive impact. I thrive on turning ideas into reality and am committed to delivering
+                My goal is to leverage my expertise to address real-world challenges and create applications that
+                enhance
+                user experiences and drive impact. I thrive on turning ideas into reality and am committed to
+                delivering
                 high-quality, user-centric solutions.
             </p>
             <div
@@ -70,6 +74,7 @@ const handleDownload = () => {
                     </a>
                 </button>
             </div>
+
         </section>
     </div>
 </template>

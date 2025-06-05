@@ -1,7 +1,7 @@
 <template>
     <main>
-        <div class="md:block lg:flex px-2 " id="dashboard">
-            <section class="lg:w-1/2 md:w-full lg:text-left md:text-center sm:text-center text-left pt-2 ">
+        <div class="grid lg:grid-cols-2 items-center justify-center px-2 lg:px-2 xl:p-0" id="dashboard">
+            <section class="w-full lg:text-left md:text-center sm:text-center text-left pt-2 lg:pr-[24px]">
 
                 <strong class="standardText  text-white">
                     <span class="text-blue-500">Welcome</span>, I am web enthusiast.
@@ -38,9 +38,9 @@
 
             </section>
 
-            <section
-                class="md:hidden lg:flex xl:flex lg:w-1/2 md:w-full flex lg:justify-end  md:justify-center justify-center my-12 md:my-12 lg:my-0">
-                <img src="../assets/image-removebg-preview.png" alt="" width="300" height="300">
+            <section class="w-full flex lg:justify-end  md:justify-center justify-center my-12 md:my-12 lg:my-0 ">
+                <img src="../assets/72444857_259190555038797_268403930940047360_n.jpg" alt="" width="100%" height="100%"
+                    class="w-full rounded object-cover">
 
             </section>
         </div>
