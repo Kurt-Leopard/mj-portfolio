@@ -93,6 +93,9 @@
                             <button class="tech-icon my-2" :style="LightModeText(mode)"><img
                                     src="../assets/projects/tailwind.png" alt="Tailwind CSS Icon" class="w-6 h-6 mr-2">
                                 Tailwind CSS</button>
+                            <button class="tech-icon my-2" :style="LightModeText(mode)"><img
+                                    src="../assets/projects/cms.png" alt="Tailwind CSS Icon" class="w-full h-6 mr-2">
+                            </button>
 
 
 
@@ -137,7 +140,9 @@
                             <button class="tech-icon my-2" :style="LightModeText(mode)"><img
                                     src="../assets/projects/tailwind.png" alt="Tailwind CSS Icon" class="w-6 h-6 mr-2">
                                 Tailwind CSS</button>
-
+                            <button class="tech-icon my-2" :style="LightModeText(mode)"><img
+                                    src="../assets/projects/cms.png" alt="Tailwind CSS Icon" class="w-full h-6 mr-2">
+                            </button>
 
 
                         </div>
@@ -179,7 +184,9 @@
                                     src="../assets/projects/tailwind.png" alt="Tailwind CSS Icon" class="w-6 h-6 mr-2">
                                 Tailwind CSS</button>
 
-
+                            <button class="tech-icon my-2" :style="LightModeText(mode)"><img
+                                    src="../assets/projects/cms.png" alt="Tailwind CSS Icon" class="w-full h-6 mr-2">
+                            </button>
 
                         </div>
                         <div>
