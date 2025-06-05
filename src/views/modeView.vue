@@ -127,11 +127,11 @@ onUnmounted(() => {
     }
 
     #about-section {
-        padding-top: 100px;
+        padding-top: 0px;
     }
 
     #project-section {
-        padding-top: 100px;
+        padding-top: 60px;
     }
 }
 </style>

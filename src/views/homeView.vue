@@ -47,9 +47,9 @@
         </div>
 
         <aboutComponent id="about-section" class="scroll-animation" v-if="showLazy"
-            :class="{ 'active': isAboutSectionVisible, 'out': !isAboutSectionVisible }" style="padding-top: 150px" />
+            :class="{ 'active': isAboutSectionVisible, 'out': !isAboutSectionVisible }" />
 
-        <projectComponent id="project-section" class="scroll-animation mb-32" style="padding-top: 150px" v-if="showLazy"
+        <projectComponent id="project-section" class="scroll-animation mb-32" v-if="showLazy"
             :class="{ 'active': isProjectSectionVisible, 'out': !isProjectSectionVisible }" />
 
     </main>
@@ -116,6 +116,33 @@ onUnmounted(() => {
 
     #dashboard {
         padding-top: 120px;
+    }
+}
+
+#large-media {
+    margin-top: 180px;
+}
+
+#about-section {
+    padding-top: 150px;
+}
+
+#project-section {
+    padding-top: 150px;
+}
+
+@media (max-width: 768px) {
+
+    #large-media {
+        margin-top: 130px;
+    }
+
+    #about-section {
+        padding-top: 0px;
+    }
+
+    #project-section {
+        padding-top: 60px;
     }
 }
 </style>

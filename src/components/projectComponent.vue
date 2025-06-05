@@ -1,5 +1,5 @@
 <template>
-    <div class="md:flex lg:flex items-center justify-center" id="project">
+    <div class="md:flex lg:flex items-center justify-center " id="project">
         <section class="lg:w-full md:w-full lg:text-left md:text-center sm:text-center px-2">
             <div class="flex lg:flex text-left md:flex xl:flex w-full justify-between items-center">
                 <strong class="text-3xl text-left md:text-4xl lg:text-5xl font-bold text-blue-500 w-1/2">

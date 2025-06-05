@@ -23,7 +23,7 @@ const handleDownload = () => {
 
 
 <template>
-    <div class="grid lg:grid-cols-2  items-center justify-center">
+    <div class="grid lg:grid-cols-2  items-center justify-center px-2 lg:px-0">
         <section class="  lg:justify-start md:justify-center justify-center ">
             <img src="../assets/12r JAMANDRE_ MARK ANGELOU O (1) (1).jpg" alt="" width="100%" height="100%"
                 class="w-full rounded object-cover hidden lg:block">
